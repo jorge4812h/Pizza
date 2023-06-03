@@ -1,0 +1,120 @@
+*{
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #F3F3F3;
+}
+
+header, footer{
+    background-color: #222222;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.header-logo, .footer-logo{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-bar ul{
+    list-style-type: none;
+}
+
+.nav-bar, .footer-nav{
+    display: flex;
+    align-items: center;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+.menu-nav{
+    text-decoration: none;
+    display: inline;
+    padding: 10px;
+}
+
+/* Section */
+
+.section-container{
+    margin: 30px 20px;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.imagen-derecha .imagen-izquierda{
+    flex-grow: 1;
+}
+
+/*Imagen-izquierda*/
+
+.imagen-izquierda{
+    position: relative;
+}
+
+.imagen-izquierda p{
+    position: absolute;
+    top: 10%;
+    left: 10%;
+    font-weight: bold;
+    color: red;
+    font-size: 1.5rem;
+}
+
+span{
+    color: aliceblue;
+}
+
+
+/*Imagen-derecha*/
+
+.imagen-derecha{
+    padding: 0px 25px;
+    border-radius: 7px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    background-color: white;
+}
+
+
+.imagen-derecha h2{
+    color: red;
+    text-align: center;
+    padding: 10px;
+}
+
+.container-arbolito{
+    display: flex;
+    gap: 70px;
+    margin: 30px 20px;
+    font-weight: bold;
+    align-items: center;
+}
+
+.top-pizza{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.top-pizza ol{
+    padding-left: 15px;
+    line-height: 30px;
+}
+
+/* Footer */
+
+.footer-nav ul{
+    list-style-type: none;
+    margin: 6px;
+    padding-left: 10px ;
+}
+
+.footer-list{
+    line-height: 30px;
+}
