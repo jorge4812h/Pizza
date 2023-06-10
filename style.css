@@ -39,21 +39,27 @@ header, footer{
 
 /* Section */
 
+main{
+    width: 100%;
+    box-sizing: border-box;
+}
+
 .section-container{
     margin: 30px 20px;
     display: flex;
     justify-content: center;
-    gap: 20px;
-}
-
-.imagen-derecha .imagen-izquierda{
-    flex-grow: 1;
+    gap: 10px;
+    flex-wrap: wrap;
 }
 
 /*Imagen-izquierda*/
 
 .imagen-izquierda{
     position: relative;
+}
+
+.imagen-izquierda img{
+    width: 90%;    
 }
 
 .imagen-izquierda p{
@@ -73,7 +79,6 @@ span{
 /*Imagen-derecha*/
 
 .imagen-derecha{
-    padding: 0px 25px;
     border-radius: 7px;
     display: flex;
     flex-direction: column;
@@ -94,6 +99,7 @@ span{
     margin: 30px 20px;
     font-weight: bold;
     align-items: center;
+    justify-content: center;
 }
 
 .top-pizza{
@@ -107,6 +113,10 @@ span{
     line-height: 30px;
 }
 
+.imagen-derecha, .imagen-izquierda{
+    width: 40vw;
+}
+
 /* Footer */
 
 .footer-nav ul{
@@ -117,4 +127,26 @@ span{
 
 .footer-list{
     line-height: 30px;
+}
+
+@media screen and (max-width: 780px) { 
+    header{
+        background-color: red;
+    }
+}
+
+@media screen and (max-width: 500px) { 
+    header{
+        background-color: green;
+    }
+
+    .imagen-derecha, .imagen-izquierda{
+        width: 80vw;
+        display: flex;
+        justify-content: center;
+    }
+
+    .menu-icon{
+        display:block;
+    }
 }
